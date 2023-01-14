@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   rules:
-    - host: wwww.ticketing-app-gantunes00.shop
+    - host: www.ticketing-app-gantunes00.shop
       http:
         paths:
           - path: /api/payments/?(.*)
@@ -51,7 +51,7 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
-    service.beta.kubernetes.io/do-loadbalancer-hostname: 'wwww.ticketing-app-gantunes00.shop'
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.ticketing-app-gantunes00.shop'
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
     app.kubernetes.io/name: ingress-nginx
